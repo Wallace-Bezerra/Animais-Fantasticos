@@ -1,0 +1,52 @@
+@import url(./reset.css);
+@import url(./animais.css);
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #faf6ed;
+    color: #222;
+    display: grid;
+    grid-template-columns: 1fr 12rem minmax(30rem, 80rem) 1fr;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    grid-column: 3/-1;
+    margin-block: 2.5rem;
+    background-color: #FB5;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .1em;
+}
+
+.grid-container {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 120px 300px 2fr;
+    width: 100%;
+}
+
+
+.titulo {
+    grid-column: 1/-1;
+    font-family: 'Playfair Display SC', georgia;
+    font-size: 9.6rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 16px;
+}

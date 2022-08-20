@@ -1,0 +1,31 @@
+.animais-descricao {
+    grid-column: 3/-1;
+}
+
+.animais-imagens {
+    grid-column: 2/3;
+    height: 370px;
+    overflow-y: scroll;
+    margin-right: 20px;
+}
+
+.animais-descricao h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #ee5544;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.animais-descricao h2::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    color: #fb5;
+}
+
+.animais-descricao p {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
