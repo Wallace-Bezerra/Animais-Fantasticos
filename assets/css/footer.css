@@ -1,0 +1,17 @@
+footer{
+  grid-column: 3/-1;
+  margin-bottom: 3rem;
+}
+footer p{
+  background-color: #fb5;
+  padding: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+@media(max-width:70rem){
+  footer{
+    grid-column: 1/-1;
+    margin: 0;
+  }
+}

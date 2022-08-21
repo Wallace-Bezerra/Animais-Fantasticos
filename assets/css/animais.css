@@ -1,31 +1,53 @@
 .animais-descricao {
     grid-column: 3/-1;
+    margin-left: 3rem;
+    margin-bottom: 8rem;
 }
 
 .animais-imagens {
     grid-column: 2/3;
-    height: 370px;
+    height: 37rem;
     overflow-y: scroll;
-    margin-right: 20px;
+}
+.animais-imagens::-webkit-scrollbar{
+    width: 1.8rem;
+}
+.animais-imagens::-webkit-scrollbar-thumb {
+    background: #fb5;
+    margin-left: 0.5rem;
+    border-left: 0.5rem solid #faf6ed;
+}
+.animais-imagens::-webkit-scrollbar-track{
+    background-color: #faf6ed;
 }
 
 .animais-descricao h2 {
     font-family: 'IBM Plex Mono', monospace;
     color: #ee5544;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.6rem;
 }
 
 .animais-descricao h2::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    color: #fb5;
+    content: "";
+    display: inline-block;
+    width: 4rem;
+    height: 1rem;
+    margin-right: 0.8rem;
+    background-color: #fb5;
 }
 
 .animais-descricao p {
-    font-size: 1.6rem;
-    margin-bottom: 16px;
+    font-size: 16px;
+    margin-bottom: 1.6rem;
+}
+
+@media(max-width:70rem){
+    .animais-imagens {
+        grid-column: 1;
+    }
+    .animais-descricao {
+        grid-column: 2;
+    } 
 }

@@ -1,5 +1,8 @@
 @import url(./reset.css);
 @import url(./animais.css);
+@import url(./faq.css);
+@import url(./contato.css);
+@import url(./footer.css);
 
 :root {
     font-size: 62.5%;
@@ -15,8 +18,9 @@ body {
 
 header {
     grid-column: 3/-1;
-    margin-block: 2.5rem;
+    margin-block: 3.2rem;
     background-color: #FB5;
+    margin-left: 12px;
 }
 
 .menu {
@@ -30,17 +34,17 @@ header {
     padding: 1rem;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     letter-spacing: .1em;
 }
 
 .grid-container {
     grid-column: 2/4;
     display: grid;
-    grid-template-columns: 120px 300px 2fr;
+    grid-template-columns: 120px 30rem 2fr;
     width: 100%;
+    padding-inline: 1.2rem;
 }
-
 
 .titulo {
     grid-column: 1/-1;
@@ -48,5 +52,19 @@ header {
     font-size: 9.6rem;
     font-weight: 400;
     line-height: 1;
-    margin-bottom: 16px;
+    margin-bottom: 3.6rem;
+}
+
+@media(max-width:70rem){
+    header{
+        grid-column: 1/-1;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .titulo{
+        font-size: 4.8rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 2fr;
+    } 
 }

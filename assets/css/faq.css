@@ -1,0 +1,37 @@
+.perguntas-faq{
+  grid-column: 2/4;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+dt{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #ee5544;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+dt::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 8px;
+  background-color: #fb5;
+}
+
+dd{
+  font-size: 16px;
+  margin-left: 2.8rem;
+}
+
+dd:not(:last-child){
+  margin-bottom: 3.2rem;
+}
+
+@media(max-width:70rem){
+  .perguntas-faq{
+    grid-column: 1/-1;
+  }
+}
