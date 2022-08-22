@@ -9,15 +9,18 @@
     height: 37rem;
     overflow-y: scroll;
 }
-.animais-imagens::-webkit-scrollbar{
+
+.animais-imagens::-webkit-scrollbar {
     width: 1.8rem;
 }
+
 .animais-imagens::-webkit-scrollbar-thumb {
     background: #fb5;
     margin-left: 0.5rem;
     border-left: 0.5rem solid #faf6ed;
 }
-.animais-imagens::-webkit-scrollbar-track{
+
+.animais-imagens::-webkit-scrollbar-track {
     background-color: #faf6ed;
 }
 
@@ -43,11 +46,12 @@
     margin-bottom: 1.6rem;
 }
 
-@media(max-width:70rem){
+@media(max-width:70rem) {
     .animais-imagens {
         grid-column: 1;
     }
+
     .animais-descricao {
         grid-column: 2;
-    } 
+    }
 }
