@@ -1,34 +1,41 @@
 // const imgs = document.querySelectorAll("img");
 
-// imgs.forEach(function (item, index, l) {
-//     console.log(`Imagem numero ${index}`, item, l);
+// imgs.forEach((item) => {
+//   console.log(item.getAttribute('src'));
 // })
 
-//EXERCICIOS
-
-// Mostre no console cada parágrafo do site
-const paragrafo = document.querySelectorAll("p");
-
-paragrafo.forEach((item) => console.log(item));
-// paragrafo.forEach((i) => {
-//     return console.log(i);
+// const menu = document.querySelector('a');
+// menu.addEventListener('click', () => {
+//   imgs[0].setAttribute("src", "https://compartilhandobr.com/wp-content/uploads/2022/08/fundamentos-da-ilustracao.jpg");
 // })
 
-// Mostre o texto dos parágrafos no console
-paragrafo.forEach((item) => console.log(item.innerText));
+// Adicione a classe ativo a todos os itens do menu
 
+const menuItens = document.querySelectorAll(".menu a");
 
-// Como corrigir os erros abaixo:
-const imgs = document.querySelectorAll('img');
+menuItens.forEach((item) => {
+  item.classList.add('ativo');
+})
 
-imgs.forEach((item, index) => {
-    console.log(item, index);
-});
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+menuItens.forEach((item, index) => {
+  if (index !== 0) {
+    item.classList.remove("ativo");
+  }
+})
+// Verifique se as imagens possuem o atributo alt
+const imagens = document.querySelectorAll("img");
+imagens.forEach((item, index) => {
+  console.log(item.nodeName, index, item.hasAttribute("alt"));
+})
 
-let i = 0;
-imgs.forEach(() => {
-    console.log(i++);
-});
+// Modifique o href do link externo no menu
+// const linkExterno = document.querySelector(".menu li:last-child a");
+// linkExterno.setAttribute('href', 'http://www.globo.com.br');
+// console.log(linkExterno);
 
-imgs.forEach(() => console.log(i++));
-
+const linkExterno = document.querySelectorAll(".menu a");
+const ultimoLink = linkExterno[--linkExterno.length];
+ultimoLink.setAttribute('href', 'https://youtube.com.br');
+console.log(ultimoLink);
+console.log(window.scrollY);
