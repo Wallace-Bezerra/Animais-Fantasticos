@@ -16,3 +16,15 @@ if (animaisLista.length && animaisConteudo.length) {
         })
     });
 }
+
+//accordion list
+const perguntasFaq = document.querySelectorAll(".perguntas-faq dt");
+perguntasFaq.forEach((dt) => {
+    dt.addEventListener('click', (event) => {
+        const dd = event.currentTarget.nextElementSibling;
+        dd.classList.toggle("ativo");
+        // console.log(event.currentTarget.nextElementSibling);
+    })
+})
+
+// console.log(perguntasFaq);
