@@ -43,7 +43,7 @@ header {
     display: grid;
     grid-template-columns: 120px 30rem 2fr;
     width: 100%;
-    padding-inline: 1.2rem;
+    padding-inline: 2.2rem;
 }
 
 .titulo {
@@ -52,19 +52,21 @@ header {
     font-size: 9.6rem;
     font-weight: 400;
     line-height: 1;
-    margin-bottom: 3.6rem;
+    margin-bottom: 1rem;
 }
 
-@media(max-width:70rem){
-    header{
+@media(max-width:70rem) {
+    header {
         grid-column: 1/-1;
         margin-left: 0;
         margin-top: 0;
     }
-    .titulo{
+
+    .titulo {
         font-size: 4.8rem;
     }
+
     .grid-container {
         grid-template-columns: 1fr 2fr;
-    } 
+    }
 }

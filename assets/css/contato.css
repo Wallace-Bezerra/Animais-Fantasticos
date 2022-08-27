@@ -1,18 +1,18 @@
-.contato{
+.contato {
   margin-bottom: 6rem;
 }
 
-.mapa{
+.mapa {
   grid-column: 2;
 }
 
-.lista-contato li{
+.lista-contato li {
   font-size: 1.6rem;
   margin-left: 2rem;
   margin-bottom: 1.6rem;
 }
 
-.lista-contato li::before{
+.lista-contato li::before {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -21,15 +21,17 @@
   margin-right: 1rem;
 }
 
-@media(max-width:70rem){
-  .contato{
+@media(max-width:70rem) {
+  .contato {
     margin-bottom: 3rem;
   }
-  .mapa{
-    margin-bottom: 40px;
+
+  .mapa {
+    margin-block: 40px;
   }
+
   .mapa,
-  .lista-contato{
+  .lista-contato {
     grid-column: 1/-1;
   }
 }

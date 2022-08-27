@@ -1,13 +1,20 @@
+.js .grid-container.animais {
+    height: 650px;
+}
+
 .animais-descricao {
     grid-column: 3/-1;
     margin-left: 3rem;
-    margin-bottom: 8rem;
 }
 
 .animais-imagens {
     grid-column: 2/3;
     height: 37rem;
     overflow-y: scroll;
+}
+
+.animais-imagens li {
+    cursor: pointer;
 }
 
 .animais-imagens::-webkit-scrollbar {
@@ -21,7 +28,17 @@
 }
 
 .animais-imagens::-webkit-scrollbar-track {
-    background-color: #faf6ed;
+    background-color: #e6e0d4;
+    border-left: 0.5rem solid #faf6ed;
+}
+
+.js .animais-descricao section {
+    display: none;
+    animation: show .6s forwards;
+}
+
+.js .animais-descricao section.ativo {
+    display: block;
 }
 
 .animais-descricao h2 {
@@ -51,7 +68,44 @@
         grid-column: 1;
     }
 
+    .js .grid-container.animais {
+        height: 460px;
+        margin-bottom: 40px;
+    }
+
     .animais-descricao {
         grid-column: 2;
+    }
+}
+
+@media(max-width:630px) {
+    .grid-container.animais {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 30px;
+    }
+
+    .animais-imagens {
+        justify-self: center;
+        max-width: 300px;
+    }
+
+    .animais-descricao {
+        grid-column: 1;
+        margin-left: 0;
+        margin-bottom: 30px;
+        margin-top: 36px;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }
