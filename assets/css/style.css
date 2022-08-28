@@ -56,12 +56,11 @@ header {
 }
 .js .js-scroll{
     opacity: 0;
-    
+    transition: opacity .8s;
 }
 .js .js-scroll.ativo{
     opacity: 1;
-    transition: all .7s;
-    animation: scroll .6s forwards;
+    animation: jsScroll .6s forwards;
 }
 
 @media(max-width:70rem) {
@@ -81,7 +80,7 @@ header {
     }
 }
 
-@keyframes scroll {
+@keyframes jsScroll {
     from{
         transform: translateY(-30px);
     }
