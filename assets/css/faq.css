@@ -2,6 +2,7 @@
   grid-column: 2/4;
   margin-top: 3rem;
   margin-bottom: 8rem;
+  width: 100%;
 }
 
 dt {
@@ -13,6 +14,9 @@ dt {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  position: relative;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #edb3ad4f;
 }
 
 dt::before {
@@ -23,19 +27,34 @@ dt::before {
   margin-right: 8px;
   background-color: #fb5;
 }
-
+dt::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../img/seta.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 3px;
+  right: 0;
+  transition: transform .7s;
+}
 dd {
   font-size: 16px;
   margin-left: 2.8rem;
+  transition: 1s ease-out;
 }
 
 .js dd {
-  display: none;
-  animation: show-up .6s ease-in-out forwards;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s;
 }
-
+.js dt.ativo::after{
+transform: rotate(-90deg);
+}
 .js dd.ativo {
-  display: block;
+  max-height:110px;
 }
 
 dd:not(:last-child) {
@@ -51,19 +70,5 @@ dd:not(:last-child) {
 @media(max-width:630px) {
   .perguntas-faq {
     margin-bottom: 4rem;
-  }
-}
-
-@keyframes show-up {
-  from {
-    opacity: 0;
-    max-height: 0;
-    /* transform: translatey(-30px); */
-  }
-
-  to {
-    opacity: 1;
-    max-height: 400px;
-    /* transform: translatey(0px); */
   }
 }

@@ -1,6 +1,8 @@
 .js .grid-container.animais {
     height: 650px;
+    margin-bottom: 90px;
 }
+
 
 .animais-descricao {
     grid-column: 3/-1;
@@ -67,9 +69,10 @@
     .animais-imagens {
         grid-column: 1;
     }
-
+    
+    
     .js .grid-container.animais {
-        height: 460px;
+        height: max-content;
         margin-bottom: 40px;
     }
 

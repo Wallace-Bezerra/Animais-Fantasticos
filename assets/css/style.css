@@ -52,7 +52,16 @@ header {
     font-size: 9.6rem;
     font-weight: 400;
     line-height: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 9rem;
+}
+.js .js-scroll{
+    opacity: 0;
+    
+}
+.js .js-scroll.ativo{
+    opacity: 1;
+    transition: all .7s;
+    animation: scroll .6s forwards;
 }
 
 @media(max-width:70rem) {
@@ -64,9 +73,19 @@ header {
 
     .titulo {
         font-size: 4.8rem;
+        margin-bottom: 30px;
     }
 
     .grid-container {
         grid-template-columns: 1fr 2fr;
+    }
+}
+
+@keyframes scroll {
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
     }
 }
