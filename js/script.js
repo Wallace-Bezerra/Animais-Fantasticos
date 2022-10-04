@@ -1,4 +1,6 @@
 document.documentElement.classList.add("js");
+
+// navegacao por tabs
 const animaisLista = document.querySelectorAll(".animais-imagens li");
 const animaisConteudo = document.querySelectorAll(".animais-descricao section");
 
@@ -7,6 +9,7 @@ function ativaTabs(index) {
     item.classList.remove("ativo");
   });
   animaisConteudo[index].classList.add("ativo");
+
   if (window.matchMedia('(max-width:630px)').matches) {
     animaisConteudo[index].scrollIntoView({
       behavior: "smooth",
@@ -72,3 +75,8 @@ function scrollAnimation() {
   })
 }
 scrollAnimation();
+
+import initModal from './modulos/modal.js';
+
+initModal();
+

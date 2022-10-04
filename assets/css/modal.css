@@ -1,0 +1,45 @@
+.modal-container {
+  margin: 0 auto;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(5, 5, 5, 0.505);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.7s ease;
+  transform: translateY(-10px);
+}
+
+.modal-container.ativo {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0px);
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  border: 10px solid #fb5;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e54;
+  color: white;
+  font-size: 24px;
+  border: solid white;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.375);
+  cursor: pointer;
+}

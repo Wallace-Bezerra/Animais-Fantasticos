@@ -19,7 +19,7 @@
                 <li><a href="#animais">ANIMAIS</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">CONTATO</a></li>
-                <li><a target="_blank" href="http://google.com.br">DEV →</a></li>
+                <li><a data-modal="open" href="">LOGIN</a></li>
             </ul>
         </nav>
     </header>
@@ -159,7 +159,19 @@
     <footer>
         <p>Todos os direitos reservados.</p>
     </footer>
-    <script src="./script.js"></script>
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button class="close" data-modal="close">X</button>
+            <form action="">
+                <label for="email">E-mail</label>
+                <input type="text" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
