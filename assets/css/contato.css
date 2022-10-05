@@ -3,6 +3,7 @@
 }
 
 .mapa {
+  position: relative;
   grid-column: 2;
 }
 

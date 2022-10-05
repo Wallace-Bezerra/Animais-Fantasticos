@@ -1,4 +1,14 @@
+
+
+
 document.documentElement.classList.add("js");
+
+
+import initModal from './modulos/modal.js';
+import initTooltip from './modulos/tooltip.js';
+initModal();
+initTooltip();
+
 
 // navegacao por tabs
 const animaisLista = document.querySelectorAll(".animais-imagens li");
@@ -76,7 +86,5 @@ function scrollAnimation() {
 }
 scrollAnimation();
 
-import initModal from './modulos/modal.js';
 
-initModal();
 
