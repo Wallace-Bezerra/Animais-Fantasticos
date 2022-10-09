@@ -6,8 +6,10 @@ document.documentElement.classList.add("js");
 
 import initModal from './modulos/modal.js';
 import initTooltip from './modulos/tooltip.js';
+import initDropdown from './modulos/dropdown.js';
 initModal();
 initTooltip();
+initDropdown();
 
 
 // navegacao por tabs
@@ -85,6 +87,3 @@ function scrollAnimation() {
   })
 }
 scrollAnimation();
-
-
-

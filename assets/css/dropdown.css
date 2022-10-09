@@ -1,0 +1,46 @@
+#sobre {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 200px;
+    background-color: #e54;
+    padding: 20px 20px;
+    border: 2px solid black;
+    z-index: 4;
+    font-family: "IBM Plex Mono", monospace;
+    opacity: 0;
+    transition: all .4s ease;
+    transform: translateY(20px);
+}
+
+.dropdown-menu.ativo {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.dropdown-menu::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #e54;
+    position: absolute;
+    top: -4px;
+    transform: rotate(45deg);
+}
+
+.dropdown-menu li {
+    font-size: 18px;
+    color: rgb(43, 42, 42);
+    transition: color .4s ease;
+}
+
+.dropdown-menu li:hover {
+
+    color: rgb(230, 218, 218);
+}
+
+.dropdown-menu li:not(:last-child) {
+    margin-bottom: 2px;
+}
