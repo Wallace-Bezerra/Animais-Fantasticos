@@ -7,10 +7,11 @@ document.documentElement.classList.add("js");
 import initModal from './modulos/modal.js';
 import initTooltip from './modulos/tooltip.js';
 import initDropdown from './modulos/dropdown.js';
+import initNumeros from './modulos/numeros.js';
 initModal();
 initTooltip();
 initDropdown();
-
+initNumeros();
 
 // navegacao por tabs
 const animaisLista = document.querySelectorAll(".animais-imagens li");
@@ -84,6 +85,7 @@ function scrollAnimation() {
     if ((top - windows) < 0) {
       item.classList.add("ativo");
     }
+
   })
 }
 scrollAnimation();

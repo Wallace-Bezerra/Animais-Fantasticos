@@ -6,6 +6,7 @@
 @import url(./modal.css);
 @import url(./tooltip.css);
 @import url(./dropdown.css);
+@import url(./numeros.css);
 
 :root {
     font-size: 62.5%;
