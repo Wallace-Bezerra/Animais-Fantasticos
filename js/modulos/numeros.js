@@ -3,7 +3,6 @@ export default function numeros() {
   let n = 0;
   function animaNumero() {
     numerosAnimais.forEach((item) => {
-      console.log(item.innerText);
       const total = item.innerText;
       const incremento = total / 100;
       item.innerText = 0;

@@ -8,10 +8,12 @@ import initModal from './modulos/modal.js';
 import initTooltip from './modulos/tooltip.js';
 import initDropdown from './modulos/dropdown.js';
 import initNumeros from './modulos/numeros.js';
+import initData from './modulos/date.js';
 initModal();
 initTooltip();
 initDropdown();
 initNumeros();
+initData();
 
 // navegacao por tabs
 const animaisLista = document.querySelectorAll(".animais-imagens li");
