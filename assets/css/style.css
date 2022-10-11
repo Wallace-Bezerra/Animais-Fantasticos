@@ -33,13 +33,28 @@ header {
     padding: 1rem;
 }
 
-.menu li a {
+.menu li a,
+.btn-menu a {
     display: block;
     padding: 1rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
+}
+
+.btn-menu {
+    display: none;
+}
+
+.menu.active {
+    position: absolute;
+    z-index: 5;
+    /* top: 60px; */
+    width: 100vh;
+    left: 0;
+    display: block;
+    background-color: rgb(231, 161, 57);
 }
 
 .grid-container {
@@ -83,6 +98,22 @@ header {
 
     .grid-container {
         grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media (max-width:600px) {
+    .menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 

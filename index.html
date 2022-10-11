@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Playfair+Display+SC:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Animais Fantásticos</title>
 </head>
@@ -15,10 +17,10 @@
 <body>
     <header>
         <nav>
-            <ul class="menu">
+            <ul class="menu active">
                 <li><a href="#animais">ANIMAIS</a></li>
                 <li id="sobre">
-                    <a href="#sobre">SOBRE</a>
+                    <a href="#">SOBRE</a>
                     <ul class="dropdown-menu" data-drop>
                         <li>
                             <a href="#">
@@ -44,6 +46,9 @@
                 <li><a href="#contato">CONTATO</a></li>
                 <li><a data-modal="open" href="">LOGIN</a></li>
             </ul>
+            <div class="btn-menu">
+                <a href="#">MENU</a>
+            </div>
         </nav>
     </header>
     <section class="grid-container animais js-scroll" id="animais">
