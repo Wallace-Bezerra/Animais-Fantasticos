@@ -69,6 +69,13 @@ function scrollSuave(event) {
     behavior: "smooth",
     block: "start"
   })
+  const menuMobile = document.querySelector(".menu-mobile.ativo");
+  if (menuMobile) {
+    setTimeout(() => {
+      menuMobile.classList.remove("ativo");
+    }, 600);
+
+  }
 
   // window.scrollTo({
   //   top: height,

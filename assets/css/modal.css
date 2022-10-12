@@ -1,7 +1,7 @@
 .modal-container {
   margin: 0 auto;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(5, 5, 5, 0.505);
   z-index: 5;
@@ -81,11 +81,13 @@ form button {
   color: white;
   cursor: pointer;
 }
+
 @media (max-width: 520px) {
   .modal {
     padding-inline: 45px;
     width: initial;
   }
+
   form input {
     min-width: 200px;
   }
