@@ -33,13 +33,52 @@ header {
     padding: 1rem;
 }
 
-.menu li a {
+.menu li a,
+.btn-menu a {
     display: block;
     padding: 1rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-size: 1.6rem;
     letter-spacing: 0.1em;
+}
+
+.btn-menu {
+    display: none;
+}
+.menu-mobile {
+    position: fixed;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(34, 34, 34, 0.59);
+    z-index: 4;
+}
+.menu-mobile.ativo {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-mobile.ativo .menu {
+    animation: fade-left .6s forwards;
+    position: absolute;
+    z-index: 5;
+    padding-top: 20px;
+    padding-inline: 30px;
+    transform: translateX(0px);
+    max-width: 260px;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    display: block;
+    background-color: rgb(231, 161, 57);
+}
+
+.menu-mobile.ativo .menu li a {
+    font-size: 20px;
 }
 
 .grid-container {
@@ -86,6 +125,22 @@ header {
     }
 }
 
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .btn-menu {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 @keyframes jsScroll {
     from {
         transform: translateY(-30px);
@@ -93,5 +148,14 @@ header {
 
     to {
         transform: translateY(0px);
+    }
+}
+@keyframes fade-left {
+    from {
+        transform: translateX(-60px);
+    }
+
+    to {
+        transform: translateX(0px);
     }
 }

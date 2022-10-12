@@ -81,3 +81,12 @@ form button {
   color: white;
   cursor: pointer;
 }
+@media (max-width: 520px) {
+  .modal {
+    padding-inline: 45px;
+    width: initial;
+  }
+  form input {
+    min-width: 200px;
+  }
+}

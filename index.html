@@ -18,7 +18,7 @@
             <ul class="menu">
                 <li><a href="#animais">ANIMAIS</a></li>
                 <li id="sobre">
-                    <a href="#sobre">SOBRE</a>
+                    <a href="#">SOBRE</a>
                     <ul class="dropdown-menu" data-drop>
                         <li>
                             <a href="#">
@@ -44,6 +44,10 @@
                 <li><a href="#contato">CONTATO</a></li>
                 <li><a data-modal="open" href="">LOGIN</a></li>
             </ul>
+            <div class="btn-menu">
+                <a href="#">MENU</a>
+            </div>
+            <div class="menu-mobile"></div>
         </nav>
     </header>
     <section class="grid-container animais js-scroll" id="animais">
@@ -213,7 +217,7 @@
             <button class="close" data-modal="close">X</button>
             <form action="">
                 <label for="email">E-mail</label>
-                <input type="text" id="email">
+                <input type="email" id="email" required>
                 <label for="senha">Senha</label>
                 <input type="password" id="senha">
                 <button type="submit">Entrar</button>

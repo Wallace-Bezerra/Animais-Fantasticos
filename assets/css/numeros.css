@@ -1,6 +1,5 @@
-.numeros {
- 
-}
+.numeros {}
+
 .numeros-grid {
   grid-column: 2/4;
   display: grid;
@@ -20,4 +19,16 @@
   font-weight: bold;
   font-size: 20px;
   color: #e54;
+}
+
+@media (max-width:1120px) {
+  .numeros-grid {
+    grid-column: 2/2;
+  }
+}
+
+@media (max-width:600px) {
+  .numeros-grid {
+    grid-column: 1;
+  }
 }
