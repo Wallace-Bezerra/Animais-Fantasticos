@@ -1,5 +1,7 @@
+
 export default function numeros() {
   const numerosAnimais = document.querySelectorAll("[data-numero]");
+  console.log(numerosAnimais)
   let n = 0;
   function animaNumero() {
     numerosAnimais.forEach((item) => {

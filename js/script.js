@@ -11,14 +11,18 @@ import initTooltip from './modulos/tooltip.js';
 import initDropdown from './modulos/dropdown.js';
 import initNumeros from './modulos/numeros.js';
 import initData from './modulos/date.js';
-
+import initFetchAnimais from './modulos/fetchAnimais.js';
 initNavTabs();
 initAccordionList();
 initLinkSuave();
+initFetchAnimais();
 initAnimationSroll();
 initMenuMobile();
 initModal();
 initTooltip();
 initDropdown();
-initNumeros();
+
 initData();
+// initNumeros();
+
+ 
